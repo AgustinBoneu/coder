@@ -1,16 +1,21 @@
 from Banco.cuenta_bancaria import CuentaBancaria
+from Banco.menu import menu_cuenta_bancaria
 
-cuenta_1=CuentaBancaria(1000)
-cuenta_2=CuentaBancaria(3000)
-cuenta_3=CuentaBancaria(5000)
-cuenta_4=CuentaBancaria(7000)
-cuenta_5=CuentaBancaria(9000)
+cuenta=CuentaBancaria(0)
 
-print(cuenta_1)
-print(cuenta_2)
-print(cuenta_3)
-print(cuenta_4)
-print(cuenta_5)
-cuenta_2.depositar(17000)
-print(cuenta_2)
-print(cuenta_3)
+opcion = menu_cuenta_bancaria()
+
+
+if opcion == 1:
+    monto = float (input("Ingrese el monto a depositar"))
+    cuenta.depositar(monto)
+elif opcion == 2:
+    monto = float (input("Ingrese el monto a retirar"))
+    monto = float (input("Ingrese el monto a retirar"))
+    cuenta.retirar(monto)
+elif opcion == 3:
+    cuenta.consultar_saldos()
+elif opcion == 4:
+    print("Hasta luego")
+    
+    
