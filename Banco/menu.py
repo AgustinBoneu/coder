@@ -1,4 +1,5 @@
-# Crear un menú de opciones para Cuenta Bancaria
+from Banco.cuenta_bancaria import CuentaBancaria
+# Crear un menú de opciones para Cuenta Bancariaclass Menu(CuentaBancaria)
 def menu_cuenta_bancaria(self):
     print("1. Depositar dinero")
     print("2. Retirar dinero")
